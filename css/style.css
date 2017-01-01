@@ -1,0 +1,366 @@
+@media (max-width: 891px) {
+	.sp.navbar {
+		height: 3.5625rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: white;
+	}
+
+	.sp.navbar > .navbar-title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.dt.navbar , .dt.navbar > .navbar-title {
+		display: none;
+	}
+
+	.hamburger-button {
+		display: inline-block;
+		width: 86px;
+		position: absolute;
+		right: -23px;
+		top: 7px;
+		padding: 10px;
+	}
+
+	.hamburger {
+		position: relative;
+		display: inline-block;
+		width: 1.25em;
+		height: 0.8em;
+		border-top: 0.2em solid #000;
+		border-bottom: 0.2em solid #000;
+		top: 3px;
+	}
+
+	.hamburger:before {
+		content: "";
+		position: absolute;
+		top: 0.3em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.2em solid #000;
+	}
+
+	.menu {
+		position: relative;
+		display: inline-block;
+	}
+
+	.side-panel {
+		position: fixed;
+		top: 0;
+		right: -380px;
+		height: 100%;
+		width: 100%;
+		max-width: 380px;
+		background-color: rgba(9, 4, 56, 0.9);
+		color: white;
+		z-index: 99;
+		-webkit-transition: right 0.5s;
+		transition: right 0.5s;
+	}
+
+	.side-panel a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.side-panel li {
+		margin: 25px 0;
+	}
+
+	.side-panel.open {
+		right: 0;
+		-webkit-transition: right 0.5s;
+		transition: right 0.5s;
+	}
+}
+
+@media (min-width: 730px) {
+	section > div {
+		width: 730px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+}
+
+@media (min-width: 891px) {
+	.sp.navbar, .side-panel {
+		display: none;
+	}
+
+	.dt.navbar {
+		height: 3.5625rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: white;
+	}
+
+	.dt.navbar > .navbar-title {
+		position: absolute;
+		top: 50%;
+		left: 30px;
+		transform: translate(0, -50%);
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.dt.navbar > ul {
+		text-align: center;
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	.dt.navbar > ul > li {
+		display: inline-block;
+	}
+
+	.dt.navbar a {
+		text-decoration: none;
+	}
+
+	.dt.navbar > ul > li+li {
+		margin-left: 1rem;
+	}
+}
+
+.download-links {
+	width: 100%;
+	margin-top: 10px;
+	position: relative;
+}
+
+@media (min-width: 531px) {
+	.theory-app {
+		width: 50%;
+		display: inline-block;
+		height: 50px;
+		vertical-align: top;
+	}
+
+	.theory-app img {
+		width: 100%;
+	}
+
+	.ebooks {
+		display: inline-block;
+		width: 49%;
+		position: absolute;
+		height: 50px;
+		background-color: #06015f;
+		vertical-align: top;
+		right: 0;
+	}
+
+	.ebooks > span {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 530px) {
+	.download-links {
+		height: 110px;
+	}
+
+	.theory-app {
+		width: 100%;
+		height: 50px;
+	}
+
+	.theory-app img {
+		width: 100%;
+	}
+
+	.ebooks {
+		width: 100%;
+		display: block;
+		position: absolute;
+		height: 50px;
+		background-color: #06015f;
+		margin-top: 15px;
+	}
+
+	.ebooks > span {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+body {
+	font-family: "Raleway", serif;
+	margin: 0;
+	line-height: 27px;
+}
+
+a {
+	color: black;
+}
+
+section {
+	padding: 20px 0;
+}
+
+section:first-of-type {
+	padding-top: 0;
+}
+
+section > * {
+	margin: 0 20px;
+}
+
+p {
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+ul {
+	list-style: none;
+}
+
+.navbar {
+	box-shadow: 5px 3px 7px #999;
+}
+
+.navbar-title {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#home {
+	margin-top: 57px;
+	background-color: white;
+}
+
+#about {
+	background-color: #b9d7ea;
+}
+
+#intensive {
+
+}
+
+#prices {
+	background-color: #e6c7c7;
+}
+
+#contact {
+	background-color: #2D2D2D;
+	color: white;
+}
+
+#areas {
+}
+
+#home ul {
+	padding-left: 25px;
+	list-style: disc outside none;
+}
+
+#intensive li {
+	position: relative;
+	height: 35px;
+}
+
+.prices {
+/*	background-color: purple;
+	color: white;*/
+}
+
+.prices > div {
+/*	border-top: 2px white solid;
+	border-bottom: 2px white solid;*/
+}
+
+.lesson {
+	display: inline-block;
+	width: calc(100% - 60px);
+	padding-left: 8px;
+	box-sizing: border-box;
+}
+
+.price {
+	display: inline-block;
+	width: 60px;
+	vertical-align: top;
+	height: 100%;
+	text-align: right;
+	padding-right: 8px;
+	box-sizing: border-box;
+}
+
+.offer {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #C81C34;
+	padding: 10px 30px;
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.offer a {
+	color: white;
+}
+
+#name, #email {
+	display: block;
+	width: 100%;
+	height: 18px;
+	padding: 6px 12px;
+	font-size: 14px;
+}
+
+#message {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	height: 170px;
+}
+
+.text-danger {
+	color: #a94442;
+}
+
+.text-success {
+	color: #74ff38;
+}
+
+.contact-detail {
+	color: white;
+}
+
+#submit {
+	background-color: #6378d6;
+	color: white;
+	width: 200px;
+	height: 34px;
+	border-radius: 4px;
+	font-size: 14px;
+	border: 1px #269abc solid;
+	margin-top: 10px;
+}
+
+.contact-detail {
+	text-decoration: none;
+}
